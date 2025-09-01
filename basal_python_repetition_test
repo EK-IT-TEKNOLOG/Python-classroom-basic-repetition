@@ -1,0 +1,30 @@
+import basal_python_repetition
+# lav funktionen return_hello, så at testen fuldføres
+def test_return_hello():
+    assert basal_python_repetition.return_hello() == "Hello, World!"
+
+# lav funktionen average_of_two_numbers, så at testen fuldføres
+def test_average_of_two_numbers():
+    assert basal_python_repetition.average_of_two_numbers(10, 20) == 15
+
+# lav funktionen rectangle_area, så at testen fuldføres
+def test_rectangle_area():
+    assert basal_python_repetition.rectangle_area(10, 40) == 400
+
+# Lav funktionen så at testen fuldføres brug: T(°C) = (T(°F) - 32) × 5/9
+def test_fahrenheit_to_celsius():
+    assert basal_python_repetition.fahrenheit_to_celsius(108) == 42.22222222222222
+
+# Lav funktionen så at testen fuldføres brug: T(°F) = T(°C) × 9/5 + 32
+def test_celsius_to_fahrenheit():
+    assert basal_python_repetition.celsius_to_fahrenheit(37) == 98.6
+
+# Skriv en funktion, der tager en streng som parameter. 
+# Navngiv funktionen "echo" Den skal returnere de første tre tegn fra strengen, gentaget tre gange. 
+# Hvis der er mindre end tre tegn i strengen, skal den returnere hele strengen
+    # sørg for at de to tests fuldføres
+def test_echo():
+    assert basal_python_repetition.echo("Python") == "PytPytPyt"
+
+def test_echo_less_than_3_chars():
+    assert basal_python_repetition.echo("Na") == "NaNaNa"
